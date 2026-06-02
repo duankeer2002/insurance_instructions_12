@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>实验说明</title>
+    <style>
+        body {
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>实验说明</h1>
+
+    <p>请设想您拥有一栋房子，持有两个时期，并计划在第二期结束时将其出售。该房子在第一期开始时的价值为 <span class="highlight">100,000 泰勒</span>，“泰勒”是一种假想的货币单位，就像美金或英镑一样。</p>
+
+    <p>您在第一期刚开始时的全部资产包括您所拥有的房子的价值以及 <span class="highlight">5,000 泰勒</span> 的现金。</p>
+
+    <h2>台风与房屋价值</h2>
+
+    <p>强台风可能发生在这个两期游戏的任何一期。请注意：</p>
+    <ul>
+        <li>台风可能发生在第一期或第二期，也可能在两期都发生，或者两期都不发生。</li>
+        <li>如果台风发生在其中一期，您的房子将会遭受价值 <span class="highlight">50,000 泰勒</span> 的损失。</li>
+        <li>如果您购买了保险，您将在遭受台风时免受此损失。</li>
+    </ul>
+
+    <p>如果您购买了保险并且台风发生，那么保险公司将会补偿您的损失，使您可以重建房屋，让它保持台风发生前的价值。</p>
+
+    <p>如果您没有购买保险但是台风发生，那么您的房子的价值会损失 <span class="highlight">50,000 泰勒</span>。</p>
+
+    <p>因此，在每一期结束时，您的房子的价值取决于台风是否发生以及您是否购买了保险。</p>
+
+    <p>您在第二期结束时的总资产等于：</p>
+    <ul>
+        <li>您在第二期结束时的房子的价值</li>
+        <li>加上 5,000 泰勒的现金</li>
+        <li>减去您在两期中总共支付的保费</li>
+    </ul>
+
+    <h2>台风发生概率</h2>
+
+    <p>台风在第一期发生的可能性为 <span class="highlight">1/25（4%）</span>。</p>
+    <p>如果在第一期没有发生台风，那么台风在第二期发生的可能性仍然是 <span class="highlight">1/25（4%）</span>。</p>
+    <p>如果在第一期发生了台风，那么台风在第二期发生的可能性会提高到 <span class="highlight">1/20（5%）</span>。</p>
+    <p>台风是否发生由计算机随机决定。</p>
+
+    <h2>保险</h2>
+
+    <p>您可以选择购买单期保险合同去保障您的房子的价值，避免潜在的台风损失。单期保险合同在各期的保费如下：</p>
+
+    <ul>
+        <li>第一期：2,000 泰勒</li>
+        <li>第二期（如果第一期没发生台风）：2,000 泰勒</li>
+        <li>第二期（如果第一期发生台风）：2,500 泰勒</li>
+    </ul>
+
+    <h2>游戏规则</h2>
+
+    <p>当您做完第一期购买保险的决策之后，计算机屏幕上将会显示台风是否在这一期发生。随后，您将决定是否购买第二期的保险。</p>
+
+    <p>一旦第一轮（两期）游戏结束，您将遵照相同规则开始新一轮的两期游戏。您将完成 <span class="highlight">30轮</span> 这样的两期游戏。</p>
+
+</body>
+</html>
